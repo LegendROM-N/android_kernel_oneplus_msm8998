@@ -322,6 +322,9 @@ static void msm_restart_prepare(const char *cmd)
 #endif
 	qpnp_pon_set_restart_reason(0x00);
 
+	/* To preserve console-ramoops */
+	need_warm_reset = true;
+
 	/* Hard reset the PMIC unless memory contents must be maintained. */
 	if (need_warm_reset || oem_panic_record) {
 		qpnp_pon_system_pwr_off(PON_POWER_OFF_WARM_RESET);
