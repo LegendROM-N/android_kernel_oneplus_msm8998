@@ -562,6 +562,7 @@ static void cpufreq_interactive_timer(unsigned long data)
 	}
 	spin_unlock(&ppol->load_lock);
         this_hispeed_freq = max(tunables->hispeed_freq, ppol->policy->min);
+        this_hispeed_freq = min(this_hispeed_freq, ppol->policy->max);
 
 	prev_chfreq = choose_freq(ppol, prev_laf);
 	pred_chfreq = choose_freq(ppol, pred_laf);
