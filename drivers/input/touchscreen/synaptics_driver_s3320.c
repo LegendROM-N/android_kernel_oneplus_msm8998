@@ -73,6 +73,8 @@ static int s2w_switch = 0;
 static int dt2w_switch = 0;
 #endif
 
+#include <linux/moduleparam.h>
+
 /*------------------------------------------------Global Define--------------------------------------------*/
 
 #define TP_UNKNOWN 0
