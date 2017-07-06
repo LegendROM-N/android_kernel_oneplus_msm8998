@@ -45,6 +45,7 @@ CONFIG_ADRENO_IDLER=y
 
 # lightning governors
 CONFIG_CPU_FREQ_GOV_CULTIVATION=y
+CONFIG_CPU_FREQ_GOV_BLU_ACTIVE=y
 
 # lightning io schedulers
 CONFIG_IOSCHED_MAPLE=y
