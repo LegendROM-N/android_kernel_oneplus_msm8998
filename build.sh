@@ -12,8 +12,8 @@ KERNEL="Image.gz-dtb"
 DEFCONFIG="lightning_defconfig"
 
 # Kernel Details
-VER=Lightning-Kernel-V1
-VARIANT="OP5-OOS-N-V1"
+VER=Lightning-Kernel-V2
+VARIANT="OP5-LOS-N-V2"
 
 # Vars
 export LOCALVERSION=~`echo $VER`
@@ -22,9 +22,9 @@ export SUBARCH=arm64
 
 # Paths
 KERNEL_DIR="${HOME}/android/Lightning_kernel_oneplus5"
-REPACK_DIR="${HOME}/android/anykernel2/"
-PATCH_DIR="${HOME}/android/anykernel2/patch/"
-MODULES_DIR="${HOME}/android/anykernel2/modules/"
+REPACK_DIR="${HOME}/android/anykernel2los/"
+PATCH_DIR="${HOME}/android/anykernel2los/patch/"
+MODULES_DIR="${HOME}/android/anykernel2los/modules/"
 ZIP_MOVE="${HOME}/android/zip"
 ZIMAGE_DIR="$KERNEL_DIR/arch/arm64/boot"
 
