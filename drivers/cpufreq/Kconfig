@@ -249,7 +249,7 @@ config CPU_FREQ_GOV_CULTIVATION
 
 config FINGERPRINT_BOOST
 	bool "Fingerprint Boost"
-	default y
+	default n
 	help
 	  Boosts available CPUs to max frequency on fingerprint sensor input.
 
